@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <section id="contact-info">
+        <div class="center">
+            <h2>How to Reach Us?</h2>
+            <p class="lead">Contact us on Facebook or send us an email or give us a call for any queries.</p>
+        </div>
+        <div class="gmap-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <div class="gmap">
+                            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.5670088485717!2d72.85757031420262!3d19.126642055350544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c829a86748c5%3A0x9667764ff96f225b!2s6%2C+Jijamata+Rd%2C+Aghadi+Nagar%2C+Andheri+East%2C+Mumbai%2C+Maharashtra+400047!5e0!3m2!1sen!2sin!4v1466083757815"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 map-content">
+                        <ul class="center">
+                            <li class="col-sm-4"></li>
+                            <li class="col-sm-4">
+                                <address>
+                                    <h5>Head Office</h5>
+                                    <p>Sion, Mumbai,<br>
+                                    India-400022</p>
+                                    <p>Phone:096190 31964 <br>
+                                    Email Address:raidforcesol@gmail.com</p>
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  <!--/gmap_area -->
+
+    <section id="contact-page">
+        <div class="container">
+            <div class="center">
+                <h2>Drop Your Message</h2>
+                <p class="lead">Feel free to give feedback or any queries!</p>
+            </div>
+            <div class="row contact-wrap">
+                <div class="status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" name="name" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Company Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Subject *</label>
+                            <input type="text" name="subject" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#contact-page-->
+
+    {% endblock %}

@@ -1,0 +1,373 @@
+{% extends "base.html" %}
+    {% block content %}
+    
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="item active" style="background-image: url( {{ url_for('static', filename='images/slider/bg1.jpg') }} )">
+                </div><!--/.item-->
+
+                <div class="item" style="background-image: url( {{ url_for('static', filename='images/slider/bg2.jpg') }} )">
+                </div><!--/.item-->
+
+                <div class="item" style="background-image: url( {{ url_for('static', filename='images/slider/bg3.jpg') }} )">
+                </div><!--/.item-->
+
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    </section><!--/#main-slider-->
+
+    <section id="feature" >
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h2>Projects</h2>
+                <p class="lead">Project R4iDForce Aims to change the Perception of Gaming in the society. Introducing Gamers as Players and
+                providing a Platform for the Players to compete in international level is of utmost priority.</p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-gamepad"></i>
+                            <h2>R4iDPlay Cafes</h2>
+                            <h3>Tie-ups with the best Cafes around the city with the best hardware to suit your needs</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-trophy"></i>
+                            <h2>Power 2 Game</h2>
+                            <h3>Championships at Mumbai, Kolkata, Delhi, Banaglore to select 20 best clubs to represent globally</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                            <h2>Market Place</h2>
+                            <h3>Get the best of the best deals Based on your Gaming time in R4iD Cafes</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+
+                    <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-globe"></i>
+                            <h2>R4X - Experience</h2>
+                            <h3>The ultimate yearly LAN tournaments. Experience high adrenalin gaming at R4idZones</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+
+                </div><!--/.services-->
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#feature-->
+
+
+    <section id="services" class="service-item">
+	   <div class="container">
+            <div class="center wow fadeInDown">
+                <h2>R4iD Services</h2>
+                <p class="lead">Gamers as players are our number one motive. We aim to change the E-sport Ecosystem in India for the better by improving the platform and providing complete packaged support for Gamers</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="{{ url_for('static', filename='images/services/services3.png') }}">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Complete Hardware support</h3>
+                            <p>provide complete tech support for our products</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="{{ url_for('static', filename='images/services/services2.png') }}">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Event Management</h3>
+                            <p>With our existing architecture , we can provide complete event management</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="{{ url_for('static', filename='images/services/services1.png') }}">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Online market support</h3>
+                            <p>provide platform with Cafe Tie-ups</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+    <section id="middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 wow fadeInDown">
+                    <div class="skill">
+                        <h2>Our Skills</h2>
+                        <p>We are first Gamers before professionals. Our team comprises of People with various skillset who are dedicated and have passion towards the work they do. Afterall Gaming is in our blood</p>
+
+                        <div class="progress-wrap">
+                            <h3>Marketing</h3>
+                            <div class="progress">
+                              <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                <span class="bar-width">90%</span>
+                              </div>
+
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <h3>Talent</h3>
+                            <div class="progress">
+                              <div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                               <span class="bar-width">95%</span>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <h3>Tech Support</h3>
+                            <div class="progress">
+                              <div class="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                <span class="bar-width">90%</span>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <h3>Creativity</h3>
+                            <div class="progress">
+                              <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                <span class="bar-width">100%</span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--/.col-sm-6-->
+
+                <div class="col-sm-6 wow fadeInDown">
+                    <div class="accordion">
+                        <h2>Why do People like us?</h2>
+                        <div class="panel-group" id="accordion1">
+                          <div class="panel panel-default">
+                            <div class="panel-heading active">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                                  Biggest Fan Base in India
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+
+                            <div id="collapseOne1" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                  <div class="media accordion-inner">
+                                        <div class="pull-left">
+                                            <img class="img-responsive" src="{{ url_for('static', filename='images/ben2.jpg') }}">
+                                        </div>
+                                        <div class="media-body">
+                                             <h4>Ben 'R4iD' Varghese</h4>
+                                             <p>R4iD represents Ben Varghese and his project which right now has a fan following of over 50k already! We have volunteers ready to work as Digital Heros</p>
+                                        </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                                  Trusted Community and affordable Products
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseTwo1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                We thrive to meet the expectations of a gamer. As a Gamer, having gaming products is a pride and we make it possible.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
+                                  Centralised Online market with Cafe Tie-ups
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseThree1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                We have various Cafe Tie-ups with Cafe management Software where we plan to integrate with the online Market.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
+                                  Community Giveaways and Monthly Community events
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseFour1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                Hey Everyone loves Freebies. And we do that regularly. We keep the audience thirst for Gaming, and make them realise career in a gaming community oriented company is not a dream anymore , its the Reality and its NOW!
+                              </div>
+                            </div>
+                          </div>
+                        </div><!--/#accordion1-->
+                    </div>
+                </div>
+
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#middle-->
+
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 wow fadeInDown">
+                   <div class="tab-wrap">
+                        <div class="media">
+                            <div class="parrent pull-left">
+                                <ul class="nav nav-tabs nav-stacked">
+                                    <li class=""><a href="#tab1" data-toggle="tab" class="analistic-01">Active Community Base</a></li>
+                                    <li class="active"><a href="#tab2" data-toggle="tab" class="analistic-02">Active Fan Base</a></li>
+                                    <li class=""><a href="#tab3" data-toggle="tab" class="tehnical">Complete Package</a></li>
+                                    <li class=""><a href="#tab4" data-toggle="tab" class="tehnical">Our Philosopy</a></li>
+                                    <li class=""><a href="#tab5" data-toggle="tab" class="tehnical">What We Do?</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="parrent media-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade" id="tab1">
+                                        <div class="media">
+                                           <div class="pull-left">
+                                                <img class="img-responsive" src="{{ url_for('static', filename='images/r4idforce.png') }}">
+                                            </div>
+                                            <div class="media-body">
+                                                 <h2>Project R4iDForce</h2>
+                                                 <p>Being Gamers Ourselves, We understand and associate ourselves with the community, and in turn they trust us for the work we do. We understand the missing elements in the esports community and are actively working to bridge the gap! And we have a huge community of digital Heroes who are actively helping us out.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="tab-pane fade active in" id="tab2">
+                                        <div class="media">
+                                           <div class="pull-left">
+                                                <img class="img-responsive" src="{{ url_for('static',filename='images/ate.png') }}">
+                                            </div>
+                                            <div class="media-body">
+                                                 <h2>Team ATE</h2>
+                                                 <p>We associate ourselves with our founder Ben 'R4iD' Varghese and his Team ATE Gaming. Both of which have a huge community following and their facebook page has a reach of over 54 thousand Gaming Fans which is nearly the whole community itself! So we can represent the communities' needs and cater to them. For us Gamers come first as the target audience.
+                                                 </p>
+                                            </div>
+                                        </div>
+                                     </div>
+
+                                     <div class="tab-pane fade" id="tab3">
+                                        <p>From the platform for Gamers to the R4iDPlay Cafes and the hardware requirements, We cater to all the needs in the esports community of India. We also have a centralised database for Gamers who register with us for R4iDPlay and maintain a central server to keep track of the Player details and all their transactions done online Associated with the R4idID.</p>
+                                     </div>
+
+                                     <div class="tab-pane fade" id="tab4">
+                                        <p>Gamers are to be associated as Players and the Gaming must be seen as a career rather than just a hooby or past time.</p>
+                                     </div>
+
+                                     <div class="tab-pane fade" id="tab5">
+                                        <p>We have tie-ups with various R4iDPlay cafes and also have a central market place for the gamers to buy esports products which can be bought based on their Gaming Time in the Cafes which are associated with us. We also Provide a Platform for Gamers to Compete at the international Stage and provide an infrastructure to the Gamers to be self sustained and provide financial support to the best 20 clubs in India for which we have the official R4iDExperience - Lan Tournament</p>
+                                     </div>
+                                </div> <!--/.tab-content-->
+                            </div> <!--/.media-body-->
+                        </div> <!--/.media-->
+                    </div><!--/.tab-wrap-->
+                </div><!--/.col-sm-6-->
+
+                <div class="col-xs-12 col-sm-4 wow fadeInDown">
+                    <div class="testimonial">
+                        <h2>Testimonials</h2>
+                         <div class="media testimonial-inner">
+                            <div class="pull-left">
+                                <img class="img-responsive img-circle" src="{{ url_for('static',filename='images/testimonials1.png') }}">
+                            </div>
+                            <div class="media-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                                <span><strong>-John Doe/</strong> Director of corlate.com</span>
+                            </div>
+                         </div>
+
+                         <div class="media testimonial-inner">
+                            <div class="pull-left">
+                                <img class="img-responsive img-circle" src="{{ url_for('static',filename='images/testimonials1.png') }}">
+                            </div>
+                            <div class="media-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                                <span><strong>-John Doe/</strong> Director of corlate.com</span>
+                            </div>
+                         </div>
+
+                    </div>
+                </div>
+
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#content-->
+
+    <section id="partner">
+        <div class="container">
+            <div class="center wow fadeInDown">
+                <h2>Our Partners</h2>
+                <p class="lead">We have active and full support from our partners. We are proud to be associated with them for this project</p>
+            </div>
+
+            <div class="partners">
+                <ul>
+                    <li> <a href="https://virtualinfocom.com/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="{{ url_for('static',filename='images/partners/partner1.jpg') }}"></a></li>
+                    <li><a><img></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="{{ url_for('static',filename='images/partners/sades.png') }}"></a></li>
+                    <li><a><img></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="{{ url_for('static',filename='images/partners/dragonwar.png') }}"></a></li>
+                </ul>
+            </div>
+        </div><!--/.container-->
+    </section><!--/#partner-->
+
+     {% endblock %}

@@ -1,0 +1,192 @@
+{% extends "base.html" %}
+    {% block content %}
+
+    <section id="about-us">
+        <div class="container">
+			<div class="center wow fadeInDown">
+				<h2>About R4iDForce</h2>
+				<p class="lead">We at R4idForce are professionals, but first, we are gamers. Being a gamer is a big part of who we are and what we do in our lives. We know that nobody understands a gamer, not their family, not their relatives and not even gaming companies. The only person who understands a gamer is another gamer.<br><br>
+                Multiplayer gaming is a spectator sport and the players that play these games are professional players who spend hours on end in practicing and getting better than anyone else in the world. They are respected tremendously and have the fan following akin to what movie stars and musicians have.<br>In India, most people don’t know about this. Every gamer’s life is a sad story about circumstances and exams and family issues and what not. We are here to change that.<br><br>
+                We are re-introducing gaming in India. Here onwards whenever you are gaming, your parents will not feel that you are wasting your life, your friends and peers won’t think of you as a loser and a time waster. You will be respected for the skill that you possess and well, be even paid for it.<br><br>
+                At R4idForce we aim at churning out professionals in this enticing choice of career which not only makes people famous around the world, but fills their pockets with money beyond their wildest dreams.<br><br>
+                So what are you waiting for? Join the force and become the next big thing that will take the country by storm.
+                <br><br>Game on.</p>
+			</div>
+
+			<!-- about us slider -->
+			<div id="about-slider">
+				<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+				  	<ol class="carousel-indicators visible-xs">
+					    <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-slider" data-slide-to="1"></li>
+					    <li data-target="#carousel-slider" data-slide-to="2"></li>
+                        <li data-target="#carousel-slider" data-slide-to="3"></li>
+                        <li data-target="#carousel-slider" data-slide-to="4"></li>
+				  	</ol>
+
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="{{ url_for('static', filename='images/team/team1.jpg') }}" class="img-responsive" alt="">
+					   </div>
+					   <div class="item">
+							<img src="{{ url_for('static', filename='images/team/team2.jpg') }}" class="img-responsive" alt="">
+					   </div>
+					   <div class="item">
+							<img src="{{ url_for('static', filename='images/team/team3.jpg') }}" class="img-responsive" alt="">
+					   </div>
+                        <div class="item">
+							<img src="{{ url_for('static', filename='images/team/team4.jpg') }}" class="img-responsive" alt="">
+					   </div>
+					</div>
+
+					<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+						<i class="fa fa-angle-left"></i>
+					</a>
+
+					<a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</div> <!--/#carousel-slider-->
+			</div><!--/#about-slider-->
+
+
+			<br><br>
+
+
+			<!-- our-team -->
+			<div class="team clearfix">
+				<div class="center wow fadeInDown">
+					<h2>Team of R4iDForce</h2>
+					<p class="lead">We are a team of professionals but first We are Gamers and We continously thrive to provide support for the E-sport community of India and change the perception of Gaming in the Society. We have team members from various fields from marketting to creative design to tech leads. With diversity we are able to achieve any work in the interest of the Gaming Community. R4iDON</p>
+				</div>
+
+				<div class="row clearfix">
+					<div class="col-md-4 col-sm-6">
+						<div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+							<div class="media">
+								<div class="pull-left">
+									<a href="#"><img class="media-object" src="{{ url_for('static', filename='images/ben5.jpg') }}" alt=""></a>
+								</div>
+								<div class="media-body">
+									<h4>Ben Varghese</h4>
+									<h5>Founder and CEO</h5>
+									<ul class="tag clearfix">
+										<li class="btn"><a href="#">PR</a></li>
+										<li class="btn"><a href="#">Professional Gamer</a></li>
+										<li class="btn"><a href="#">Management</a></li>
+									</ul>
+
+									<ul class="social_icons">
+										<li><a href="https://www.facebook.com/ben.varghese.r4iD"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://twitter.com/iamr4id"><i class="fa fa-twitter"></i></a></li>
+									</ul>
+								</div>
+							</div><!--/.media -->
+							<p>Professional Cs 1.6 player representing India at many International Competition with his Team ATE Gaming of which he was the captain. He is the founding member of R4iDForce and continues to work for the E-sport scenerio in India</p>
+						</div>
+					</div><!--/.col-lg-4 -->
+
+
+					<div class="col-md-4 col-sm-6 col-md-offset-2">
+						<div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+							<div class="media">
+								<div class="pull-left">
+									<a href="#"><img class="media-object" src="{{ url_for('static', filename='images/kewal1.jpg') }}" alt=""></a>
+								</div>
+								<div class="media-body">
+									<h4>Kewal Krishna</h4>
+									<h5>Founding Member and CEO</h5>
+									<ul class="tag clearfix">
+										<li class="btn"><a href="#">Management</a></li>
+										<li class="btn"><a href="#">HR</a></li>
+										<li class="btn"><a href="#">IIM Raipur</a></li>
+										<li class="btn"><a href="#">Finance</a></li>
+									</ul>
+									<ul class="social_icons">
+										<li><a href="https://www.facebook.com/kewal.krishna"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									</ul>
+								</div>
+							</div><!--/.media -->
+                            <br>
+							<p>INTRO</p>
+						</div>
+					</div><!--/.col-lg-4 -->
+				</div> <!--/.row -->
+				<div class="row team-bar">
+					<div class="first-one-arrow hidden-xs">
+						<hr>
+					</div>
+					<div class="first-arrow hidden-xs">
+						<hr> <i class="fa fa-angle-up"></i>
+					</div>
+					<div class="second-arrow hidden-xs">
+						<hr> <i class="fa fa-angle-down"></i>
+					</div>
+					<div class="third-arrow hidden-xs">
+						<hr> <i class="fa fa-angle-up"></i>
+					</div>
+					<div class="fourth-arrow hidden-xs">
+						<hr> <i class="fa fa-angle-down"></i>
+					</div>
+				</div> <!--skill_border-->
+
+				<div class="row clearfix">
+					<div class="col-md-4 col-sm-6 col-md-offset-2">
+						<div class="single-profile-bottom wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+							<div class="media">
+								<div class="pull-left">
+									<a href="#"><img class="media-object" src="{{ url_for('static', filename='images/suyeb1.jpg') }}" alt=""></a>
+								</div>
+
+								<div class="media-body">
+									<h4>Suyeb Siddiqui</h4>
+									<h5>Founder and CEO</h5>
+									<ul class="tag clearfix">
+										<li class="btn"><a href="#">Tech Lead</a></li>
+										<li class="btn"><a href="#">Database</a></li>
+										<li class="btn"><a href="#">SDE</a></li>
+									</ul>
+									<ul class="social_icons">
+										<li><a href="https://www.facebook.com/suyeb.siddiqui"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									</ul>
+								</div>
+							</div><!--/.media -->
+							<p>INTRO2</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-md-offset-2">
+						<div class="single-profile-bottom wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+							<div class="media">
+								<div class="pull-left">
+									<a href="#"><img class="media-object" src="{{ url_for('static', filename='images/rohit.jpg') }}" alt=""></a>
+								</div>
+								<div class="media-body">
+									<h4>Rohit Pandey</h4>
+									<h5>Founder and CEO</h5>
+									<ul class="tag clearfix">
+										<li class="btn"><a href="#">Data Analytics</a></li>
+										<li class="btn"><a href="#">Backend</a></li>
+										<li class="btn"><a href="#">SDE</a></li>
+										<li class="btn"><a href="#">Tech</a></li>
+									</ul>
+									<ul class="social_icons">
+										<li><a href="https://www.facebook.com/Rohit.A.Pandey"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									</ul>
+								</div>
+							</div><!--/.media -->
+							<p>INTRO 3</p>
+						</div>
+					</div>
+				</div>	<!--/.row-->
+			</div><!--section-->
+		</div><!--/.container-->
+    </section><!--/about-us-->
+
+    {% endblock %}
